@@ -24,3 +24,76 @@ body {
 a { color: inherit; }
 img { display: block; max-width: 100%; }
 
+
+/* Hero Banner */
+.hero {
+  position: relative;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  color: white;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(20, 23, 25, 0.5),
+      rgba(25, 25, 25, 0.12) 72%
+    ),
+    url("assets/main-banner.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* Hero Content */
+.hero__content {
+  position: relative;
+  z-index: 1;
+  width: min(100% - 48px, 960px);
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+/* Heading */
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 44px;
+  line-height: 1.18;
+  font-weight: 700;
+}
+
+/* Description */
+.hero p {
+  max-width: 450px;
+  margin: 0 0 22px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+/* Orange Button */
+.button {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: var(--orange);
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #ff7800;
+}
+
+/* White Wave */
+.hero__wave {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: auto;
+  min-height: 40px;
+  pointer-events: none;
+}
