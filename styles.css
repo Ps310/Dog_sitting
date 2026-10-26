@@ -97,3 +97,94 @@ img { display: block; max-width: 100%; }
   min-height: 40px;
   pointer-events: none;
 }
+
+
+
+/* Services Section */
+.services {
+  background: linear-gradient(
+    to bottom,
+    white 0,
+    white 425px,
+    #f2f2f2 425px
+  );
+
+  padding: 66px 24px 105px;
+}
+
+/* Services Heading */
+.services__intro {
+  max-width: 740px;
+  margin: 0 auto 78px;
+  text-align: center;
+}
+
+.services h2 {
+  margin: 0 0 10px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.services__intro p {
+  font-size: 18px;
+  line-height: 1.35;
+  color: #64786d;
+}
+
+/* Three Cards Layout */
+.services__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Card */
+.service-card {
+  min-width: 0;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* Card Image */
+.service-card img {
+  width: 100%;
+  aspect-ratio: 430 / 301;
+  object-fit: cover;
+}
+
+/* Card Content */
+.service-card__body {
+  padding: 34px 24px 35px;
+}
+
+.service-card h3 {
+  font-size: 23px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.service-card p {
+  font-size: 17px;
+  line-height: 1.38;
+  color: #64786d;
+  margin: 0 0 18px;
+}
+
+/* Learn More Links */
+.text-link {
+  display: inline-block;
+  color: #e66f0a;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
