@@ -1,0 +1,26 @@
+/*
+  Dog-sitting design exercise — plain CSS (no frameworks).
+  Read from top to bottom: shared styles -> desktop -> tablet -> mobile.
+*/
+
+:root {
+  --ink: #35423c;
+  --muted: #64786d;
+  --orange: #e87313;
+  --page-grey: #f2f2f2;
+}
+
+/* box-sizing makes sizing layouts much easier to reason about. */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--page-grey);
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.35;
+}
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+
